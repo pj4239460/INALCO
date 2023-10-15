@@ -1,25 +1,31 @@
 public class Point {
     // Les variables d'instance pour les coordonnées x et y
-	private int x;
-	private int y;
+	// private int x;
+	// private int y;
 	// public int x;
 	// public int y;
+    private int[] coordinates;// Un tableau de deux entiers pour stocker les coordonnées [x,y]
+
 
     // Constructeur pour initialiser les coordonnées du point
     public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+        //this.x = x;
+        //this.y = y;
+        this.coordinates = new int[]{x,y};
     }
 
     // Méthode pour déplacer le point en ajoutant des valeurs aux coordonnées x et y
     public void deplace(int deltaX, int deltaY) {
-        this.x += deltaX;
-        this.y += deltaY;
+        //this.x += deltaX;
+        //this.y += deltaY;
+        this.coordinates[0] += deltaX;
+        this.coordinates[1] += deltaY;
     }
 
     // Méthode pour afficher les coordonnées du point
     public void affiche() {
-        System.out.println(this + ": x = " + x + ", y = " + y);
+        //System.out.println(this + ": x = " + x + ", y = " + y);
+        System.out.println(this + ": x = " + coordinates[0] + ", y = " + coordinates[1]);
     }
 
     public static void main(String[] args) {
