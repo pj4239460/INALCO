@@ -20,7 +20,7 @@ public class TestPoint {
     p2.deplace(1,4);
     p2.affiche();
 
-    Point p3 = new Point (1, 6);
+    Point p3 = new Point (2, 6);
     p3.affiche();
 
     //System.out.println("x : " + p3.x);
@@ -30,10 +30,11 @@ public class TestPoint {
     Point p4 = new Point (1,6);
 
     System.out.println("p3,x : " + p3.getX());
+    p3.setX(1);
+    System.out.println("p3,x : " + p3.getX());
     System.out.println("p3 et p4 coincident-ils ? " + p3.coincide(p4));
     System.out.println("p4 et p3 coincident-ils ? " + p4.coincide(p3));
     System.out.println("p1 et p3 coincident-ils ? " + p1.coincide(p3));
-    //System.out.println("Nb Points créés : " + Point.getNombreOccurence());
 
   }
 }
