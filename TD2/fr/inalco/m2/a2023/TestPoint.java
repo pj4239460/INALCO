@@ -11,16 +11,19 @@ public class TestPoint {
     // TODO Auto-generated method stub
 
     Point p1 = new Point (2, 4);
+    System.out.println("Nombre d'instances de Point:"+Point.getInstanceCount());
     p1.affiche();
     p1.deplace(2, 3);
     p1.affiche();
 
     Point p2 = new Point (3, 5);
+    System.out.println("Nombre d'instances de Point:"+Point.getInstanceCount());
     p2.affiche();
     p2.deplace(1,4);
     p2.affiche();
 
     Point p3 = new Point (2, 6);
+    System.out.println("Nombre d'instances de Point:"+Point.getInstanceCount());
     p3.affiche();
 
     //System.out.println("x : " + p3.x);
@@ -28,6 +31,7 @@ public class TestPoint {
     */
 
     Point p4 = new Point (1,6);
+    System.out.println("Nombre d'instances de Point:"+Point.getInstanceCount());
 
     System.out.println("p3,x : " + p3.getX());
     p3.setX(1);

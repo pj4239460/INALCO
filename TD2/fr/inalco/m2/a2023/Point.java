@@ -4,6 +4,7 @@ public class Point {
     // Les variables d'instance pour les coordonnées x et y
     private static final short X = 0;
     private static final short Y = 1;
+    private static int instanceCount = 0;
 
     int[] tab; // déclaration un tableau
 
@@ -12,8 +13,14 @@ public class Point {
         this.tab = new int[2];
         this.tab[X] = x;
         this.tab[Y] = y;
+        instanceCount++;
     }
 
+    // Méthode statique pour obtenir le nombre d'instances
+    public static int getInstanceCount(){
+        return instanceCount;
+    }
+    
     // getter pour x
     public int getX() {
         return this.tab[X];
