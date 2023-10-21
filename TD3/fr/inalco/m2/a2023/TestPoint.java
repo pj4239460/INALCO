@@ -1,0 +1,33 @@
+package fr.inalco.m2.a2023;
+
+public class TestPoint {
+  /**
+   * @param unObjet pouvant se déplacer.
+   * @param dX déplacement sur l'axe des abscises
+   * @param dY déplacement sur l'axe des ordonnées
+   */
+
+  public static void deplaceObjet(PeutSeDeplacer unObjet, int dX, int dY){
+  	unObjet.deplace(dX, dY);
+  }
+
+  /* Cette méthode est le point d'entrée d'un programme lancé depuis la console */
+  public static void main(String[] args) {
+
+  	Point p1 = new Point(3,5);
+  	Point p2 = new Point(3,5);
+
+  	p1.affiche();
+  	p2.affiche();
+
+  	System.out.println("P1 cooincide-t-il avec P2:"+p1.coincide(p2));
+
+  	TestPoint.deplaceObjet(p1, 2, 4);
+  	p1.affiche();
+  	p2.affiche();
+  	System.out.println("P1 cooincide-t-il avec P2:"+p1.coincide(p2));
+  }
+
+
+
+}
