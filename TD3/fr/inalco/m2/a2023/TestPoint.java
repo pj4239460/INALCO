@@ -14,8 +14,8 @@ public class TestPoint {
   /* Cette méthode est le point d'entrée d'un programme lancé depuis la console */
   public static void main(String[] args) {
 
-  	Point p1 = new Point(3,5);
-  	Point p2 = new Point(3,5);
+  	PointTab p1 = new PointTab (3,5);
+  	PointTab p2 = new PointTab (3,5);
 
   	p1.affiche();
   	p2.affiche();
