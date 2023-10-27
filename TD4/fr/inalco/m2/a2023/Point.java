@@ -6,10 +6,10 @@ package fr.inalco.m2.a2023;
 
 public class Point implements PeutSeDeplacer {
 
-	private static int nbOcc = 0; // Déclaration et initialisation d'une variable de classe.
-	/* Les attribut x et y seront privés à la classe c’est-à-dire uniquement visible par les méthodes de la classe.*/
+    private static int nbOcc = 0; // Déclaration et initialisation d'une variable de classe.
+    /* Les attribut x et y seront privés à la classe c’est-à-dire uniquement visible par les méthodes de la classe.*/
     protected int x; // déclaration des attributs
-	protected int y; // déclaration des attributs
+    protected int y; // déclaration des attributs
 
     // Un autre constructeur avec deux arguments
     /**
