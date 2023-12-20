@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        School mySchool = new School();
+
+        mySchool.addStudent(new Student("Alice",12));
+        mySchool.addStudent(new Student("Bob",13));
+
+        mySchool.addTeacher(new Teacher("Smith","Math"));
+        mySchool.addTeacher(new Teacher("Johnson","English"));
+
+        mySchool.printStudents();
+        mySchool.printTeachers();
+    }
+}
