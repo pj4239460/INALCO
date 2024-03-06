@@ -1,0 +1,3 @@
+// La méthode copy utilise super pour la destination (dest) car elle va consommer des éléments (ajouter des éléments à la liste), 
+// et extends pour la source (src) car elle produit des éléments (lire des éléments de la liste).
+// La méthode append utilise extends car elle ne peut ajouter que des éléments de type Number ou ses sous-classes à la liste.

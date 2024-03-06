@@ -1,0 +1,3 @@
+// Le wildcard super est utilisé parce que la liste list est un consommateur d'objets de type T 
+// (elle va ajouter obj à ses éléments). Le principe PECS recommande d'utiliser super lorsque la structure de données va consommer les éléments 
+// (c'est-à-dire qu'elle fonctionne comme un consommateur).
